@@ -1,0 +1,57 @@
+{
+  "name": "keyed-collections",
+  "version": "0.0.1",
+  "description": "ES6 keyed collections ponyfills",
+  "keywords": [
+    "map",
+    "set",
+    "weakmap",
+    "weakset",
+    "es2015",
+    "ecmascript",
+    "harmony",
+    "ponyfill",
+    "prollyfill",
+    "polyfill",
+    "shim",
+    "browser"
+  ],
+  "module": "esm/keyed-collections.js",
+  "main": "umd/keyed-collections.js",
+  "unpkg": "umd/keyed-collections.min.js",
+  "files": [
+    "esm",
+    "umd",
+    "src"
+  ],
+  "scripts": {
+    "test": "eslint src/**.mjs",
+    "build:esm": "cross-env NODE_ENV=esm rollup -c",
+    "build:umd": "cross-env NODE_ENV=development rollup -c",
+    "build:umd:min": "cross-env NODE_ENV=production rollup -c",
+    "build": "npm run build:esm && npm run build:umd && npm run build:umd:min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luwes/keyed-collections.git"
+  },
+  "author": {
+    "name": "Wesley Luyten",
+    "email": "me@wesleyluyten.com",
+    "url": "https://wesleyluyten.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luwes/keyed-collections/issues"
+  },
+  "homepage": "https://github.com/luwes/keyed-collections#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "rollup": "^0.64.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-bundle-size": "^1.0.2",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0"
+  }
+}
