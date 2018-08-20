@@ -3,7 +3,7 @@ function shouldUseNative() {
   return !!Map;
 }
 
-function MapPolyfill() {
+export function MapPolyfill() {
   let i, k, v;
   const clear = () => { k = []; v = []; };
   const has = obj => -1 < (i = k.indexOf(obj));

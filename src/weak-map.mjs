@@ -5,7 +5,7 @@ function shouldUseNative() {
 
 let i = 0;
 const hOP = {}.hasOwnProperty;
-function WeakMapPolyfill() {
+export function WeakMapPolyfill() {
   const id = '__' + [i++, Math.random()];
   const has = obj => hOP.call(obj, id);
   return {

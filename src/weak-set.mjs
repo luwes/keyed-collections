@@ -1,10 +1,10 @@
-import WeakMap from './weak-map.mjs';
+import { WeakMapPolyfill as WeakMap } from './weak-map.mjs';
 
 function shouldUseNative() {
   return !!WeakSet;
 }
 
-function WeakSetPolyfill() {
+export function WeakSetPolyfill() {
   const wm = new WeakMap;
   return {
     has: obj => wm.get(obj) === true,

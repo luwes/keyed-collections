@@ -1,10 +1,10 @@
-import Map from './map.mjs';
+import { MapPolyfill as Map } from './map.mjs';
 
 function shouldUseNative() {
   return !!Set;
 }
 
-function SetPolyfill() {
+export function SetPolyfill() {
   const m = new Map;
   const set = m.set;
   delete m.get;

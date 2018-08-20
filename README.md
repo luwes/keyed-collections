@@ -14,5 +14,5 @@ npm install keyed-collections
 import {Map, Set, WeakMap, WeakSet} from 'keyed-collections';
 ```
 
-Polyfill code by (c) Andrea Giammarchi. @WebReflection
+Polyfill code by (c) Andrea Giammarchi. @WebReflection  
 https://github.com/WebReflection/poorlyfills

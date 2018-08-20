@@ -1,2 +1,7 @@
+.DS_Store
+node_modules
 *.sublime-project
-/node_modules/
+yarn-error.log
+.nyc_output/
+coverage
+*.lcov
